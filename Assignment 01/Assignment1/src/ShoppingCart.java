@@ -7,9 +7,9 @@ public class ShoppingCart {
         items = new ArrayList<>(); //array list use korechi karon cart e koyta item ache janina
     }
 
-    public void addItem(Product product, int quantity) {
+    public void addItem(Product product, int quantity) { //product er id diye check korchi
         for (CartItem item : items) {
-            if (item.getProduct().getId().equals(product.getId())) {
+            if (item.getProduct().getId().equals(product.getId())) {  
                 items.remove(item);
                 break;
             }
