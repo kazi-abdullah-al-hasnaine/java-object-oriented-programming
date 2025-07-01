@@ -1,23 +1,23 @@
 public class Customer {
-    private String name;
-    private String email;
-    private ShoppingCart cart;
+    private String _name;
+    private String _email;
+    private ShoppingCart _cart;
 
     public Customer(String _n, String _e) {
-        name = _n;
-        email = _e;
-        cart = new ShoppingCart();
+        _name = _n;
+        _email = _e;
+        _cart = new ShoppingCart(); // customer banaile shopping cart ow hobe
     }
 
     public String getName() {
-        return name;
+        return _name;
     }
 
     public String getEmail() {
-        return email;
+        return _email;
     }
 
     public ShoppingCart getShoppingCart() {
-        return cart;
+        return _cart;
     }
 }

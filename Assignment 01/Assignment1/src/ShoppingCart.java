@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class ShoppingCart {
-    private List<CartItem> items;
+    private List<CartItem> items; //cart item use korechi cause quantity of product janar jnno cart lagbe
 
     public ShoppingCart() {
-        items = new ArrayList<>();
+        items = new ArrayList<>(); //array list use korechi karon cart e koyta item ache janina
     }
 
     public void addItem(Product product, int quantity) {

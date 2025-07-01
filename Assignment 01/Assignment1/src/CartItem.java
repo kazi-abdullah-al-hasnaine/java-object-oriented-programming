@@ -1,21 +1,21 @@
 public class CartItem {
-    private Product product;
-    private int quantity;
+    private Product _product;
+    private int _quantity;
 
     public CartItem(Product p, int q) {
-        product = p;
-        quantity = q;
+        _product = p;
+        _quantity = q;
     }
 
     public Product getProduct() {
-        return product;
+        return _product;
     }
 
     public int getQuantity() {
-        return quantity;
+        return _quantity;
     }
 
     public double getSubtotal() {
-        return product.getPrice() * quantity;
+        return _product.getPrice() * _quantity;
     }
 }
